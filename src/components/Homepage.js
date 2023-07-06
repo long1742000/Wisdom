@@ -15,8 +15,22 @@ const Homepage = () => {
             })
         })
 
+        const observer1 = new IntersectionObserver((entries) => {
+            entries.forEach((entry) => {
+                if (entry.isIntersecting) {
+                    entry.target.classList.add('show1');
+                }
+                else {
+                    entry.target.classList.remove('show1');
+                }
+            })
+        })
+
         const hiddenElements = document.querySelectorAll('.hidden');
+        const hiddenElements1 = document.querySelectorAll('.hidden1');
+
         hiddenElements.forEach((el) => observer.observe(el));
+        hiddenElements1.forEach((el) => observer1.observe(el));
 
     }, []);
 
@@ -40,7 +54,7 @@ const Homepage = () => {
                     </div>
                     <hr />
 
-                    <div className='row mb-5 hidden'>
+                    <div className='row mb-5 hidden1'>
                         <div className='col-4 pc'>
                             <img src={require('../assets/images/image-services.jpg')} alt='loading...'></img>
                         </div>
