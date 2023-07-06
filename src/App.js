@@ -1,17 +1,20 @@
 import './App.scss';
 import NavBar from './components/Nav';
 import Homepage from './components/Homepage';
-import { Container } from 'react-bootstrap';
+import ContactFooter from './components/ContactFooter';
+import ButtonOnTop from './components/ButtonOntop';
+import Footer from './components/Footer';
 
 function App() {
   return (
     <>
       <NavBar></NavBar>
-      <Container>
-        <div className='content'>
-          <Homepage></Homepage>
-        </div>
-      </Container>
+      <div className='container-fluid content pb-5'>
+        <Homepage></Homepage>
+      </div>
+      <Footer></Footer>
+      <ContactFooter></ContactFooter>
+      <ButtonOnTop></ButtonOnTop>
     </>
   );
 }

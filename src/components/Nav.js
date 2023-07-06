@@ -1,20 +1,11 @@
-import Container from 'react-bootstrap/Container';
-import Nav from 'react-bootstrap/Nav';
-import Navbar from 'react-bootstrap/Navbar';
-import NavDropdown from 'react-bootstrap/NavDropdown';
 import '../styles/nav.scss';
 
 const NavBar = () => {
 
     const handleToggle = () => {
         const nav = document.getElementById('nav');
-        const item = document.getElementsByClassName('item');
         const mobile = document.getElementsByClassName('mobile-nav');
         const icon = document.getElementById("icon");
-
-        console.log(nav);
-        console.log(item);
-        console.log(mobile);
 
         if (mobile.length > 0) {
             nav.classList.remove('mobile-nav');
@@ -28,14 +19,27 @@ const NavBar = () => {
 
     return (
         <>
-            <nav className='navbar'>
+            <nav className='navBar'>
                 <a className='logo-pc' href='#'><img src={require(`../assets/images/logo-pc.jpg`)} alt='loading...' /></a>
                 <a className='logo-mb' href='#'><img src={require(`../assets/images/logo.jpg`)} alt='loading...' /></a>
                 <div id="nav" className='item'>
                     <ul>
                         <li className='active'><a href='#'>Home</a></li>
-                        <li><a href='#'>Product</a></li>
-                        <li><a href='#'>Contact Us</a></li>
+                        <li id="products"><a href='#'>Categories <i className="fa fa-caret-down"></i></a>
+                            <ul className='dropDown'>
+                                <li><a href='#'>Category 1</a></li>
+                                <li><a href='#'>Category 2</a></li>
+                                <li><a href='#'>Category 3</a></li>
+                                <li><a href='#'>Category 4</a></li>
+                                <li><a href='#'>Category 5</a></li>
+                            </ul>
+                        </li>
+                        <li><a href='#'>About Us <i className="fa fa-caret-down"></i></a>
+                            <ul className='dropDown'>
+                                <li><a href='#'>History</a></li>
+                                <li><a href='#'>Contact Us</a></li>
+                            </ul>
+                        </li>
                         <li><a href='#'>Login</a></li>
                     </ul>
                 </div>
