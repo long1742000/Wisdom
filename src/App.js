@@ -5,6 +5,7 @@ import ContactFooter from './components/ContactFooter';
 import ButtonOnTop from './components/ButtonOntop';
 import Footer from './components/Footer';
 import History from './components/History';
+import ContactUs from './components/ContactUs';
 
 function App() {
   return (
@@ -13,6 +14,7 @@ function App() {
       <div className='container-fluid content pb-5'>
         {/* <Homepage></Homepage> */}
         <History></History>
+        {/* <ContactUs></ContactUs> */}
       </div>
       <Footer></Footer>
       <ContactFooter></ContactFooter>

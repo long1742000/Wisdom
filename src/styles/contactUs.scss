@@ -1,0 +1,189 @@
+.contactUs {
+    position: relative;
+    top: 130px;
+    margin-bottom: 150px;
+
+    .infor {
+        width: 80%;
+        margin: auto;
+        padding-left: 50px;
+
+        .item {
+            position: relative;
+
+            p {
+                font-family: Helvetica, Arial, sans-serif;
+                color: gray;
+            }
+
+            .title {
+                margin-top: 50px;
+                font-weight: 550;
+                font-size: 25px;
+            }
+
+            .detail {
+                transition: 0.5s;
+            }
+
+            .detail:hover {
+                color: rgb(149, 34, 34);
+                padding-left: 10px;
+            }
+
+            .underlined {
+                top: 30px;
+                position: absolute;
+                width: 0;
+                height: 3px;
+                background-color: gray;
+                transition: 0.25s;
+            }
+        }
+
+        .item:hover .underlined {
+            width: 110px;
+        }
+
+        .item:nth-child(4) {
+            transition-delay: 200ms;
+        }
+
+        .item:nth-child(3) {
+            transition-delay: 400ms;
+        }
+
+        .item:nth-child(2) {
+            transition-delay: 600ms;
+        }
+
+        .item:nth-child(1) {
+            transition-delay: 800ms;
+        }
+    }
+
+    .contactForm {
+        border: 2px solid gray;
+        width: 80%;
+        margin: auto;
+        padding-left: 50px;
+        padding-bottom: 50px;
+        background-color: rgba(255, 255, 255, 0.612);
+
+        .title {
+            font-weight: 550;
+            font-size: 25px;
+            margin-top: 50px;
+            font-family: Helvetica, Arial, sans-serif;
+            color: gray;
+        }
+
+        .item {
+            position: relative;
+            padding-top: 50px;
+
+            label {
+                position: absolute;
+                font-size: 15px;
+                font-family: Helvetica, Arial, sans-serif;
+                color: rgb(149, 34, 34);
+                top: 30px;
+            }
+
+            input {
+                width: 80%;
+                border: none;
+                border-bottom: 1px solid rgb(149, 34, 34);
+                background: none;
+                outline: none;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            textarea {
+                width: 80%;
+                border: none;
+                border-bottom: 1px solid rgb(149, 34, 34);
+                background: none;
+                outline: none;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+        }
+
+        .underlined {
+            top: 80px;
+            position: absolute;
+            width: 0;
+            height: 3px;
+            background-color: gray;
+            transition: 0.25s;
+        }
+
+        .send {
+            text-decoration: none;
+            font-family: Helvetica, Arial, sans-serif;
+            padding: 10px 30px;
+            background-color: gray;
+            color: white;
+            transition: 0.5s;
+        }
+
+        .send:hover {
+            border: 1px solid gray;
+            background-color: white;
+            color: gray;
+        }
+    }
+
+    .contactForm:hover .underlined {
+        width: 110px;
+    }
+
+    .map {
+        padding-top: 30px;
+        width: 90%;
+        margin: auto;
+    }
+
+    @media screen and (max-width: 992px) {
+        .infor {
+            width: 80%;
+            margin: auto;
+            padding-left: 0;
+
+            .item {
+                .title {
+                    font-size: 20px;
+                }
+
+                p {
+                    font-size: 13px;
+                }
+            }
+        }
+
+        .contactForm {
+            width: 100%;
+
+            .title {
+                font-size: 20px;
+            }
+        }
+
+        .map {
+            width: 100%;
+        }
+    }
+
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-30%);
+        transition: all 1s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}

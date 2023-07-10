@@ -10,7 +10,7 @@ const ContactFooter = () => {
                         <p><i className="fa fa-phone"></i> 1800 9999</p>
                     </div>
                     <div className='col-4'>
-                        <p><i className="fa fa-envelope"></i> wisdom@gmail.com</p>
+                        <p><i className="fa fa-envelope"></i> info@wisdomrobotics.org</p>
                     </div>
                     <div className='col-4'>
                         <p><i className="fa fa-comments"></i> Chat with us</p>

@@ -44,8 +44,8 @@ const Footer = () => {
                     </div>
                     <div className='col-md-3 col-12 hidden'>
                         <p>Contact Us</p>
-                        <p className='info'>Phone: 1800 9999</p>
-                        <p className='info'>Email: wisdom@gmail.com</p>
+                        <p className='info'><i className="fa fa-phone"></i> 1800 9999</p>
+                        <p className='info'><i className="fa fa-envelope"></i> info@wisdomrobotics.org</p>
                     </div>
                 </div>
                 <hr />
