@@ -1,6 +1,7 @@
 import { Container } from 'react-bootstrap';
 import '../styles/footer.scss';
 import { useEffect } from 'react';
+import { NavLink } from 'react-router-dom';
 
 const Footer = () => {
 
@@ -35,12 +36,12 @@ const Footer = () => {
                     </div>
                     <div className='col-md-3 col-6 hidden'>
                         <p>Knowledge</p>
-                        <a href='#'>Cloud</a>
-                        <a href='#'>Services of cloud</a>
+                        <a href='/knowledge#cloud'>Cloud</a>
+                        <a href='/knowledge#services'>Services of cloud</a>
                     </div>
                     <div className='col-md-3 col-12 mb-5 hidden'>
                         <p>About Us</p>
-                        <a href='#'>History</a>
+                        <NavLink to="/history">History</NavLink>
                     </div>
                     <div className='col-md-3 col-12 hidden'>
                         <p>Contact Us</p>

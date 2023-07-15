@@ -24,6 +24,7 @@
 
         .content {
             transition: 0.5s;
+            background: none;
         }
 
         .content:hover {
@@ -93,12 +94,17 @@
             transition: 1s;
             height: 0;
             padding-left: 35px;
+            background: none;
 
             p {
                 font-family: Helvetica, Arial, sans-serif;
                 opacity: 0;
                 transition: 1s;
                 color: gray;
+            }
+
+            p:hover {
+                color: black;
             }
         }
 

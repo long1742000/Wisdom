@@ -1,0 +1,197 @@
+.knowledge {
+    position: relative;
+    top: 130px;
+    margin-bottom: 150px;
+    text-align: center;
+
+    h1 {
+        color: black;
+    }
+
+    p {
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    #cloud {
+        width: 60%;
+        margin-bottom: 50px;
+
+        .content {
+            text-align: left;
+            background: none;
+
+            p {
+                color: gray;
+                font-size: 17px;
+                transition: 0.5s;
+            }
+        }
+
+        .content:hover {
+            p {
+                color: black;
+            }
+        }
+
+        .image {
+            img {
+                width: 100%;
+            }
+        }
+    }
+
+    #services {
+        width: 60%;
+        margin-bottom: 50px;
+
+        .introduce {
+            p {
+                color: gray;
+                font-size: 17px;
+                transition: 0.5s;
+            }
+        }
+
+        .introduce:hover {
+            p {
+                color: black;
+            }
+        }
+
+        .content {
+            background-color: white;
+            text-align: left;
+            color: gray;
+            transition: 0.5s;
+            margin-bottom: 30px;
+            background: none;
+
+            img {
+                width: 100%;
+            }
+
+            .title {
+                font-weight: 600;
+                font-size: 20px;
+                color: black;
+            }
+        }
+
+        .content:hover {
+            color: black;
+        }
+
+        .pc {
+            display: block;
+        }
+
+        .dt {
+            display: none;
+        }
+
+        @media screen and (max-width: 768px) {
+            .pc {
+                display: none;
+            }
+
+            .dt {
+                display: block;
+            }
+        }
+    }
+
+    #benefit {
+        width: 60%;
+
+        .item {
+            background-color: rgba(255, 255, 255, 0.575);
+            border-radius: 5px;
+            text-align: left;
+            margin: auto;
+            margin-bottom: 20px;
+            transition: 0.5s;
+
+            img {
+                width: 100%;
+            }
+
+            p {
+                color: gray;
+                transition: 0.5s;
+            }
+        }
+
+        .item:hover {
+            background-color: white;
+
+            p {
+                color: black;
+            }
+        }
+
+        .cost-effective {
+            border: 2px solid rgb(200, 200, 0);
+        }
+
+        .agility {
+            border: 2px solid rgb(0, 145, 255);
+        }
+
+        .mobility {
+            border: 2px solid rgb(186, 2, 2);
+        }
+
+        .backup {
+            border: 2px solid rgb(140, 0, 255);
+        }
+
+        .security {
+            border: 2px solid rgb(183, 183, 183);
+        }
+    }
+
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-30%);
+        transition: all 1s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateX(0);
+    }
+}
+
+@media screen and (max-width: 1180px) {
+    .knowledge {
+        #cloud {
+            width: 80%;
+        }
+
+        #benefit {
+            width: 80%;
+        }
+
+        #services {
+            width: 80%;
+        }
+    }
+}
+
+@media screen and (max-width: 920px) {
+    .knowledge {
+        #cloud {
+            width: 100%;
+        }
+
+        #benefit {
+            width: 100%;
+        }
+
+        #services {
+            width: 100%;
+        }
+    }
+}

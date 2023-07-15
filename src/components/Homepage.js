@@ -34,6 +34,7 @@ const Homepage = () => {
                         <div className='col-lg-8 col-12'>
                             <h2>Cloud Server ?</h2>
                             <p>Cloud Server was born to solve many problems of cost, warranty and uptime for businesses. Especially for those who want to develop business based on the Internet. Overall, Cloud Server is one of the best server solutions today.</p>
+                            <a href='/knowledge#cloud' className='readmore'>Readmore</a>
                         </div>
                         <div className='col-lg-4 col-12'>
                             <img src={require('../assets/images/image-services.jpg')} alt='loading...'></img>
@@ -48,6 +49,7 @@ const Homepage = () => {
                         <div className='col-lg-8 col-12'>
                             <h2>Cloud Storage ?</h2>
                             <p>The comprehensive storage solution Cloud Storage for businesses and individuals is built on a cloud computing platform with unlimited storage capacity, high safety.</p>
+                            <a href='/knowledge#cloud' className='readmore'>Readmore</a>
                         </div>
                         <div className='col-12 dt'>
                             <img src={require('../assets/images/image-services.jpg')} alt='loading...'></img>
@@ -59,6 +61,7 @@ const Homepage = () => {
                         <div className='col-lg-8 col-12'>
                             <h2>Why choose Wisdom ?</h2>
                             <p>Wisdom will ensure you about the best service and incentives. High reputation along with a professional team gives you trust.</p>
+                            <a href='/history' className='readmore'>Readmore</a>
                         </div>
                         <div className='col-lg-4 col-12'>
                             <img src={require('../assets/images/image-services.jpg')} alt='loading...'></img>

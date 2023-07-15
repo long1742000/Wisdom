@@ -1,0 +1,267 @@
+.login-page {
+    position: relative;
+    top: 130px;
+    margin-bottom: 150px;
+
+    .form {
+        .login {
+            background-color: white;
+            text-align: center;
+            padding-bottom: 20px;
+            width: 40%;
+            margin: auto;
+            box-shadow: 0 0 20px 5px rgb(195, 195, 195);
+            display: none;
+
+            p {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 30px;
+                color: gray;
+            }
+
+            .title {
+                font-weight: 600;
+            }
+
+            .item {
+                position: relative;
+                padding-top: 30px;
+
+                label {
+                    position: absolute;
+                    font-size: 15px;
+                    font-family: Helvetica, Arial, sans-serif;
+                    color: rgb(149, 34, 34);
+                    top: 10px;
+                }
+
+                input {
+                    width: 80%;
+                    border: none;
+                    border-bottom: 1px solid rgb(149, 34, 34);
+                    background: none;
+                    outline: none;
+                    font-family: Helvetica, Arial, sans-serif;
+                }
+            }
+
+            .forgot {
+                margin-top: 20px;
+
+                a {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 15px;
+                    color: rgb(149, 34, 34);
+                    text-decoration: none;
+                    transition: 0.5s;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+
+            }
+
+            .other {
+                margin-top: 20px;
+
+                p {
+                    font-size: 15px;
+                    font-family: Helvetica, Arial, sans-serif;
+
+                    .gg {
+                        color: red;
+                        transition: 0.25s;
+                    }
+
+                    .gg:hover {
+                        color: rgb(149, 34, 34);
+                    }
+
+                    .fb {
+                        color: rgb(0, 55, 255);
+                        transition: 0.25s;
+                    }
+
+                    .fb:hover {
+                        color: rgb(85, 122, 255);
+                    }
+                }
+
+                a {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 15px;
+                    color: rgb(149, 34, 34);
+                    text-decoration: none;
+                    transition: 0.5s;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .button-login {
+                padding: 10px 70px;
+                text-decoration: none;
+                background-color: rgb(149, 34, 34);
+                color: white;
+                transition: 0.5s;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            .button-login:hover {
+                border: 1px solid rgb(149, 34, 34);
+                background-color: white;
+                color: rgb(149, 34, 34);
+            }
+        }
+
+        .register {
+            background-color: white;
+            text-align: center;
+            padding-bottom: 20px;
+            width: 40%;
+            margin: auto;
+            box-shadow: 0 0 20px 5px rgb(195, 195, 195);
+            display: none;
+
+            p {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 30px;
+                color: gray;
+            }
+
+            .title {
+                font-weight: 600;
+            }
+
+            .item {
+                position: relative;
+                padding-top: 30px;
+
+                label {
+                    position: absolute;
+                    font-size: 15px;
+                    font-family: Helvetica, Arial, sans-serif;
+                    color: rgb(149, 34, 34);
+                    top: 10px;
+                }
+
+                input {
+                    width: 80%;
+                    border: none;
+                    border-bottom: 1px solid rgb(149, 34, 34);
+                    background: none;
+                    outline: none;
+                    font-family: Helvetica, Arial, sans-serif;
+                }
+            }
+
+            .forgot {
+                margin-top: 20px;
+
+                a {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 15px;
+                    color: rgb(149, 34, 34);
+                    text-decoration: none;
+                    transition: 0.5s;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+
+            }
+
+            .other {
+                margin-top: 20px;
+
+                p {
+                    font-size: 15px;
+                    font-family: Helvetica, Arial, sans-serif;
+
+                    .gg {
+                        color: red;
+                        transition: 0.25s;
+                    }
+
+                    .gg:hover {
+                        color: rgb(149, 34, 34);
+                    }
+
+                    .fb {
+                        color: rgb(0, 55, 255);
+                        transition: 0.25s;
+                    }
+
+                    .fb:hover {
+                        color: rgb(85, 122, 255);
+                    }
+                }
+
+                a {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 15px;
+                    color: rgb(149, 34, 34);
+                    text-decoration: none;
+                    transition: 0.5s;
+                }
+
+                a:hover {
+                    text-decoration: underline;
+                }
+            }
+
+            .button-login {
+                padding: 10px 70px;
+                text-decoration: none;
+                background-color: rgb(149, 34, 34);
+                color: white;
+                transition: 0.5s;
+                font-family: Helvetica, Arial, sans-serif;
+            }
+
+            .button-login:hover {
+                border: 1px solid rgb(149, 34, 34);
+                background-color: white;
+                color: rgb(149, 34, 34);
+            }
+        }
+
+        .display {
+            display: block;
+        }
+
+        @media screen and (max-width: 992px) {
+            .login {
+                width: 60%;
+            }
+
+            .register {
+                width: 60%;
+            }
+        }
+
+        @media screen and (max-width: 768px) {
+            .login {
+                width: 80%;
+            }
+
+            .register {
+                width: 80%;
+            }
+        }
+
+        @media screen and (max-width: 404px) {
+            .login {
+                width: 100%;
+            }
+
+            .register {
+                width: 100%;
+            }
+        }
+    }
+}
