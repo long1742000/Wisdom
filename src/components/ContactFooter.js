@@ -13,7 +13,7 @@ const ContactFooter = () => {
                         <p><i className="fa fa-envelope"></i> info@wisdomrobotics.org</p>
                     </div>
                     <div className='col-4'>
-                        <p><i className="fa fa-comments"></i> Chat with us</p>
+                        <a href='/contact'><i className="fa fa-comments"></i> Chat with us</a>
                     </div>
                 </div>
             </Container>

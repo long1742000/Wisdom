@@ -1,0 +1,206 @@
+.category {
+    position: relative;
+    margin: auto;
+
+    .br {
+        height: 50px;
+    }
+
+    .main-img img {
+        margin-top: 130px;
+        width: 100%;
+    }
+
+    .title {
+        text-align: center;
+
+        p {
+            font-size: 50px;
+            font-family: Helvetica, Arial, sans-serif;
+        }
+    }
+
+    .recommend {
+        text-align: center;
+
+        p {
+            color: gray;
+            font-family: Helvetica, Arial, sans-serif;
+            transition: 0.5s;
+        }
+
+        p:hover {
+            color: black;
+        }
+    }
+
+    .item {
+        padding: 10px;
+
+        p {
+            font-family: Helvetica, Arial, sans-serif;
+            color: black;
+            font-size: 10px;
+        }
+
+        .hidden {
+            opacity: 0;
+            filter: blur(5px);
+            transform: translateY(200%);
+            transition: all 1s;
+        }
+
+        .show {
+            opacity: 1;
+            filter: blur(0);
+            transform: translateY(0);
+        }
+    }
+
+    .even {
+        border: 2px solid gray;
+        margin: 10px;
+        height: 120px;
+        background-color: white;
+        border-top-left-radius: 50px;
+        border-bottom-left-radius: 50px;
+        box-shadow: 0 0 10px 5px rgb(188, 188, 188);
+
+        .number {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: 50px;
+                color: gray;
+            }
+        }
+
+        .name {
+            font-weight: 600;
+            color: rgb(149, 34, 34);
+            font-size: 12px;
+            padding-top: 10px;
+        }
+    }
+
+    .odd {
+        border: 2px solid rgb(149, 34, 34);
+        margin: 10px;
+        height: 120px;
+        background-color: white;
+        text-align: right;
+        border-top-right-radius: 50px;
+        border-bottom-right-radius: 50px;
+        box-shadow: 0 0 10px 5px rgb(188, 188, 188);
+
+        .number {
+            text-align: center;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+
+            p {
+                font-size: 50px;
+                color: rgb(149, 34, 34);
+            }
+        }
+
+        .name {
+            font-weight: 600;
+            color: gray;
+            font-size: 12px;
+            padding-top: 10px;
+        }
+    }
+
+    .benefit {
+        border: 2px solid rgb(149, 34, 34);
+        border-radius: 20px;
+        margin-bottom: 10px;
+        padding: 20px;
+        transition: 0.5s;
+
+        p {
+            font-family: Helvetica, Arial, sans-serif;
+            color: gray;
+            transition: 0.5s;
+        }
+    }
+
+    .benefit:hover {
+        background-color: white;
+
+        p {
+            color: rgb(149, 34, 34);
+        }
+    }
+
+    .hidden {
+        opacity: 0;
+        filter: blur(5px);
+        transform: translateX(-100%);
+        transition: all 1s;
+    }
+
+    .show {
+        opacity: 1;
+        filter: blur(0);
+        transform: translateY(0);
+    }
+
+    table {
+
+        tr,
+        td {
+            border: 2px solid rgb(149, 34, 34);
+        }
+
+        border: 2px solid rgb(149, 34, 34);
+        text-align: center;
+        background-color: white;
+
+        .title {
+            color: gray;
+
+            p {
+                font-family: Helvetica, Arial, sans-serif;
+                font-size: 30px;
+            }
+        }
+
+        .name {
+            width: 20%;
+
+            p {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+        }
+
+        .detail {
+
+            width: 60%;
+
+            p {
+                font-family: Helvetica, Arial, sans-serif;
+            }
+        }
+
+        a {
+            font-family: Helvetica, Arial, sans-serif;
+            text-decoration: none;
+            color: white;
+            background-color: rgb(149, 34, 34);
+            border: 1px solid rgb(149, 34, 34);
+            padding: 10px 30px;
+            transition: 0.5s;
+        }
+
+        a:hover {
+            color: rgb(149, 34, 34);
+            background: none;
+        }
+    }
+}

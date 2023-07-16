@@ -1,6 +1,6 @@
 import { NavLink, useNavigate } from 'react-router-dom';
 import '../styles/nav.scss';
-import { account } from '../store/fakeData';
+import { account, categories } from '../store/fakeData';
 import { toast } from 'react-toastify';
 
 const NavBar = () => {
@@ -38,11 +38,11 @@ const NavBar = () => {
                         <li><NavLink to="/">Home</NavLink></li>
                         <li id="products"><a href='#'>Categories <i className="fa fa-caret-down"></i></a>
                             <ul className='dropDown'>
-                                <li><a href='#'>Category 1</a></li>
-                                <li><a href='#'>Category 2</a></li>
-                                <li><a href='#'>Category 3</a></li>
-                                <li><a href='#'>Category 4</a></li>
-                                <li><a href='#'>Category 5</a></li>
+                                {categories.map((item, index) => {
+                                    return (
+                                        <li key={index}><NavLink to={`/category/${item.id}`}>{item.name}</NavLink></li>
+                                    )
+                                })}
                             </ul>
                         </li>
                         <li><a href='#'>About Us <i className="fa fa-caret-down"></i></a>

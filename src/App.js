@@ -11,8 +11,10 @@ import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
 import Knowledge from './components/Knowledge';
+import Category from './components/Category';
 
 function App() {
+
   return (
     <>
       <BrowserRouter>
@@ -23,7 +25,8 @@ function App() {
             <Route path="/history" element={<History></History>} />
             <Route path="/contact" element={<ContactUs></ContactUs>} />
             <Route path="/login" element={<Login></Login>} />
-            <Route path="/knowledge" element={<Knowledge></Knowledge>} />
+            <Route path='/knowledge' element={<Knowledge></Knowledge>} />
+            <Route path="/category/:id" element={<Category></Category>} />
           </Routes>
         </div>
         <Footer></Footer>

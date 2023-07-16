@@ -2,6 +2,7 @@ import { Container } from 'react-bootstrap';
 import '../styles/footer.scss';
 import { useEffect } from 'react';
 import { NavLink } from 'react-router-dom';
+import { categories } from '../store/fakeData';
 
 const Footer = () => {
 
@@ -28,11 +29,11 @@ const Footer = () => {
                 <div className='row'>
                     <div className='col-md-3 col-6 mb-5 hidden'>
                         <p>Categories</p>
-                        <a href='#'>Category 1</a>
-                        <a href='#'>Category 2</a>
-                        <a href='#'>Category 3</a>
-                        <a href='#'>Category 4</a>
-                        <a href='#'>Category 5</a>
+                        {categories.map((item, index) => {
+                            return (
+                                <a key={index} href={`/category/${item.id}#header`}>{item.name}</a>
+                            )
+                        })}
                     </div>
                     <div className='col-md-3 col-6 hidden'>
                         <p>Knowledge</p>
@@ -41,7 +42,7 @@ const Footer = () => {
                     </div>
                     <div className='col-md-3 col-12 mb-5 hidden'>
                         <p>About Us</p>
-                        <NavLink to="/history">History</NavLink>
+                        <a href="/history#header">History</a>
                     </div>
                     <div className='col-md-3 col-12 hidden'>
                         <p>Contact Us</p>
