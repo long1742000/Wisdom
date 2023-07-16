@@ -1,5 +1,6 @@
 import Container from 'react-bootstrap/Container';
 import '../styles/footer.scss';
+import { NavLink } from 'react-router-dom';
 
 const ContactFooter = () => {
     return (
@@ -13,7 +14,7 @@ const ContactFooter = () => {
                         <p><i className="fa fa-envelope"></i> info@wisdomrobotics.org</p>
                     </div>
                     <div className='col-4'>
-                        <a href='/contact'><i className="fa fa-comments"></i> Chat with us</a>
+                        <NavLink to='/contact'><i className="fa fa-comments"></i> Chat with us</NavLink>
                     </div>
                 </div>
             </Container>

@@ -203,4 +203,37 @@
             background: none;
         }
     }
+
+    @media screen and (max-width: 764px) {
+        .title {
+            p {
+                font-size: 30px;
+            }
+        }
+
+        table {
+
+            .title {
+
+                p {
+                    font-family: Helvetica, Arial, sans-serif;
+                    font-size: 20px;
+                }
+            }
+
+            a {
+                padding: 20px 5px;
+            }
+        }
+    }
+
+    @media screen and (max-width: 340px) {
+        .even {
+            height: 150px;
+        }
+
+        .odd {
+            height: 150px;
+        }
+    }
 }

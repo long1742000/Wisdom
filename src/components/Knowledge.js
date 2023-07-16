@@ -44,10 +44,10 @@ const Knowledge = () => {
                 <h1>Benefit</h1>
                 <div className="item cost-effective hidden">
                     <div className="row">
-                        <div className="col-2">
+                        <div className="col-md-2 col-12">
                             <img src={require('../assets/images/cost-effective.jpg')} alt="loading..."></img>
                         </div>
-                        <div className="col-10">
+                        <div className="col-md-10 col-12">
                             <p>
                                 Cloud computing helps eliminate investment costs when buying hardware and software. Establish and run data centers on the spot, server system, electricity running around the clock to provide energy and cooling. Team of IT experts to manage infrastructure. This cost is extremely large for small and medium businesses or new businesses.
                             </p>
@@ -56,10 +56,10 @@ const Knowledge = () => {
                 </div>
                 <div className="item agility hidden">
                     <div className="row">
-                        <div className="col-2">
+                        <div className="col-md-2 col-12">
                             <img src={require('../assets/images/agility.jpg')} alt="loading..."></img>
                         </div>
-                        <div className="col-10">
+                        <div className="col-md-10 col-12">
                             <p>
                                 Most of the use of cloud computing service means that users have been granted a self -service database (not in use with anyone). So even a large amount of computer resources can be provided for a few minutes.
                                 Just a few clicks to use, extract, store data, do not take too much time. It helps businesses flexibly and reduce the pressure in planning capacity.
@@ -69,10 +69,10 @@ const Knowledge = () => {
                 </div>
                 <div className="item mobility hidden">
                     <div className="row">
-                        <div className="col-2">
+                        <div className="col-md-2 col-12">
                             <img src={require('../assets/images/mobility.jpg')} alt="loading..."></img>
                         </div>
-                        <div className="col-10">
+                        <div className="col-md-10 col-12">
                             <p>
                                 Cloud computing services are flexibly expanding and serving millions in the world at the same time. The distribution of IT resources is greater than or lower than the calculation power, memory, and bandwidth. Can be compared to a computer with 2GB of memory, it cannot work more if the memory is full, and it can only serve a user.
                             </p>
@@ -81,10 +81,10 @@ const Knowledge = () => {
                 </div>
                 <div className="item backup hidden">
                     <div className="row">
-                        <div className="col-2">
+                        <div className="col-md-2 col-12">
                             <img src={require('../assets/images/backup.jpg')} alt="loading..."></img>
                         </div>
-                        <div className="col-10">
+                        <div className="col-md-10 col-12">
                             <p>
                                 Cloud computing makes backing up and restoring data safer, not dependent on a device if unfortunately organized unfortunately having problems such as fire, floods ... help businesses continue their business. . The cloud storage is also less expensive because the data is copied at multiple spare websites of cloud service providers.
                             </p>
@@ -93,10 +93,10 @@ const Knowledge = () => {
                 </div>
                 <div className="item security hidden">
                     <div className="row">
-                        <div className="col-2">
+                        <div className="col-md-2 col-12">
                             <img src={require('../assets/images/security.jpg')} alt="loading..."></img>
                         </div>
-                        <div className="col-10">
+                        <div className="col-md-10 col-12">
                             <p>
                                 Many cloud service providers provide a range of policies, technology and control. It is to strengthen your overall security system, helping to protect your data, applications and infrastructure from potential threats.
                             </p>

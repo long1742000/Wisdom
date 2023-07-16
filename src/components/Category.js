@@ -53,7 +53,7 @@ const Category = () => {
                                 {
                                     if (item.id % 2) {
                                         return (
-                                            <div key={index} className="col-6 item" >
+                                            <div key={index} className="col-md-6 col-12 item" >
                                                 <div className="row even hidden">
                                                     <div className="col-2 number">
                                                         <p>{item.id}</p>
@@ -68,7 +68,7 @@ const Category = () => {
                                     }
                                     else {
                                         return (
-                                            <div key={index} className="col-6 item" >
+                                            <div key={index} className="col-md-6 col-12 item" >
                                                 <div className="row odd hidden">
                                                     <div className="col-10">
                                                         <p className="name">{item.name}</p>
