@@ -43,7 +43,12 @@ const Category = () => {
                                 <p>{data.name}</p>
                             </div>
                             <div className="col-12 recommend">
-                                <p>{data.recommend}</p>
+                                {data.recommend &&
+                                    <p>{data.recommend}</p>
+                                }
+                                {!data.recommend &&
+                                    <p className="updating"><i class="fa-solid fa-circle-notch fa-spin"></i> Updating...</p>
+                                }
                             </div>
                             <div className="br"></div>
                             <div className='col-12 title'>
@@ -84,7 +89,7 @@ const Category = () => {
                                 }
                             })}
                             {!data.feature &&
-                                <p>Updating...</p>
+                                <p className="updating"><i class="fa-solid fa-circle-notch fa-spin"></i> Updating...</p>
                             }
                             <div className="br"></div>
                             <div className='col-12 title'>
@@ -98,50 +103,50 @@ const Category = () => {
                                 )
                             })}
                             {!data.benefit &&
-                                <p>Updating...</p>
+                                <p className="updating"><i class="fa-solid fa-circle-notch fa-spin"></i> Updating...</p>
                             }
                             <div className="br"></div>
                             <div className='col-12 title'>
                                 <p>Products</p>
                             </div>
-                            <table>
-                                <tbody>
-                                    <tr className="title">
-                                        <td><p>Name</p></td>
-                                        <td><p>Detail</p></td>
-                                        <td></td>
-                                    </tr>
-                                    {products.map((item, index) => {
-                                        if (item.categoryId == id) {
-                                            return (
-                                                <tr key={index}>
-                                                    <td className="name">
-                                                        <p>{item.name}</p>
-                                                    </td>
-                                                    <td className="detail">
-                                                        <p><strong>OS:</strong> {item.OS}</p>
-                                                        <p><strong>Core:</strong> {item.core}</p>
-                                                        <p><strong>RAM:</strong> {item.ram} Gb</p>
-                                                        <p><strong>Storage:</strong> {item.storage}</p>
-                                                        <p><strong>Bandwidth:</strong> {item.bandwidth} Mb/s</p>
-                                                        <p><strong>Flow:</strong> {item.flow}</p>
-                                                        <p><strong>IP:</strong> {item.ip}</p>
-                                                        <p><strong>Network Infrastructure:</strong> {item.networkInfrastructure} Gb/s</p>
-                                                    </td>
-                                                    <td>
-                                                        <a href="#" className="buy">Register</a>
-                                                    </td>
-                                                </tr>
-                                            )
-                                        }
-                                        else {
-                                            <tr>
-                                                <td colSpan={3}><p>Updating...</p></td>
-                                            </tr>
-                                        }
-                                    })}
-                                </tbody>
-                            </table>
+                            {products.length > 0 &&
+                                <table>
+                                    <tbody>
+                                        <tr className="title">
+                                            <td><p>Name</p></td>
+                                            <td><p>Detail</p></td>
+                                            <td></td>
+                                        </tr>
+                                        {products.map((item, index) => {
+                                            if (item.categoryId == id) {
+                                                return (
+                                                    <tr key={index}>
+                                                        <td className="name">
+                                                            <p>{item.name}</p>
+                                                        </td>
+                                                        <td className="detail">
+                                                            <p><strong>OS:</strong> {item.OS}</p>
+                                                            <p><strong>Core:</strong> {item.core}</p>
+                                                            <p><strong>RAM:</strong> {item.ram} Gb</p>
+                                                            <p><strong>Storage:</strong> {item.storage}</p>
+                                                            <p><strong>Bandwidth:</strong> {item.bandwidth} Mb/s</p>
+                                                            <p><strong>Flow:</strong> {item.flow}</p>
+                                                            <p><strong>IP:</strong> {item.ip}</p>
+                                                            <p><strong>Network Infrastructure:</strong> {item.networkInfrastructure} Gb/s</p>
+                                                        </td>
+                                                        <td>
+                                                            <a href="#" className="buy">Register</a>
+                                                        </td>
+                                                    </tr>
+                                                )
+                                            }
+                                        })}
+                                    </tbody>
+                                </table>
+                            }
+                            {products.length == 0 &&
+                                <p className="updating"><i class="fa-solid fa-circle-notch fa-spin"></i> Updating...</p>
+                            }
                         </div>
                     </>
                 }

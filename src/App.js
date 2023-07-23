@@ -1,17 +1,18 @@
 import './App.scss';
 import NavBar from './components/Nav';
-import Homepage from './components/Homepage';
+import Homepage from './views/Homepage';
 import ContactFooter from './components/ContactFooter';
 import ButtonOnTop from './components/ButtonOntop';
 import Footer from './components/Footer';
-import History from './components/History';
-import ContactUs from './components/ContactUs';
-import Login from './components/Login';
+import History from './views/History';
+import ContactUs from './views/ContactUs';
+import Login from './views/Login';
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import 'react-toastify/dist/ReactToastify.css';
 import { ToastContainer } from 'react-toastify';
-import Knowledge from './components/Knowledge';
-import Category from './components/Category';
+import Knowledge from './views/Knowledge';
+import Category from './views/Category';
+import NotFound from './views/404';
 
 function App() {
 
@@ -27,6 +28,7 @@ function App() {
             <Route path="/login" element={<Login></Login>} />
             <Route path='/knowledge' element={<Knowledge></Knowledge>} />
             <Route path="/category/:id" element={<Category></Category>} />
+            <Route path="/*" element={<NotFound></NotFound>} />
           </Routes>
         </div>
         <Footer></Footer>

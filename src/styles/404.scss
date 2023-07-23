@@ -1,0 +1,42 @@
+.notfound {
+    position: relative;
+    top: 130px;
+    margin-bottom: 150px;
+    text-align: center;
+
+    .content {
+        margin: auto;
+        width: 80%;
+        background-color: white;
+
+        h1 {
+            color: gray;
+            font-family: Helvetica, Arial, sans-serif;
+            font-size: 150px;
+            font-weight: 600;
+        }
+
+        p {
+            font-family: Helvetica, Arial, sans-serif;
+            color: gray;
+            font-size: 20px;
+            transition: 0.5s;
+        }
+    }
+
+    .content:hover {
+        p {
+            color: black;
+        }
+    }
+
+    @media screen and (max-width: 432px) {
+        .content {
+            width: 100%;
+
+            h1 {
+                font-size: 130px;
+            }
+        }
+    }
+}
