@@ -1,0 +1,35 @@
+{
+  "files": {
+    "main.css": "/Wisdom/static/css/main.37da622b.css",
+    "main.js": "/Wisdom/static/js/main.a029cbe2.js",
+    "static/js/787.28cb0dcd.chunk.js": "/Wisdom/static/js/787.28cb0dcd.chunk.js",
+    "static/media/web-hosting.jpg": "/Wisdom/static/media/web-hosting.af7cd3b688303fe3d9af.jpg",
+    "static/media/home-img.jpg": "/Wisdom/static/media/home-img.1f29e606ac5e4d5a9f95.jpg",
+    "static/media/private-cloud.jpg": "/Wisdom/static/media/private-cloud.29efb24159e5ccfc240f.jpg",
+    "static/media/img1.png": "/Wisdom/static/media/img1.6e47d26079e29ee18fa4.png",
+    "static/media/cloud-server.jpg": "/Wisdom/static/media/cloud-server.ad8519a72b4de3c26702.jpg",
+    "static/media/paas.jpg": "/Wisdom/static/media/paas.a1f01037dc56cb7fe243.jpg",
+    "static/media/image-services.jpg": "/Wisdom/static/media/image-services.d2e883258398428d4fd5.jpg",
+    "static/media/main-bg.jpg": "/Wisdom/static/media/main-bg.a8abe8f928dbc77ffe76.jpg",
+    "static/media/domain.jpg": "/Wisdom/static/media/domain.b75b956ab373500d8f36.jpg",
+    "static/media/agility.jpg": "/Wisdom/static/media/agility.beb7f2b12d38f668bd8c.jpg",
+    "static/media/cloud.jpg": "/Wisdom/static/media/cloud.fda10999e521879c1a22.jpg",
+    "static/media/security.jpg": "/Wisdom/static/media/security.8cb17010481f6336c6a8.jpg",
+    "static/media/cost-effective.jpg": "/Wisdom/static/media/cost-effective.9e3a09e724db6c833a41.jpg",
+    "static/media/mobility.jpg": "/Wisdom/static/media/mobility.b4486fe132d62874b634.jpg",
+    "static/media/cloud-desktop.jpg": "/Wisdom/static/media/cloud-desktop.a3a93ffb86525d734ba2.jpg",
+    "static/media/logo-pc.jpg": "/Wisdom/static/media/logo-pc.b877c90b671e2ca237d1.jpg",
+    "static/media/saas.jpg": "/Wisdom/static/media/saas.178ebb6f09602cd56c3f.jpg",
+    "static/media/iaas.jpg": "/Wisdom/static/media/iaas.302cd8cdd548f9a23075.jpg",
+    "static/media/img2.png": "/Wisdom/static/media/img2.11b493aac42d5e3eadf9.png",
+    "static/media/logo.jpg": "/Wisdom/static/media/logo.1cf03c38f7ab308d343c.jpg",
+    "index.html": "/Wisdom/index.html",
+    "main.37da622b.css.map": "/Wisdom/static/css/main.37da622b.css.map",
+    "main.a029cbe2.js.map": "/Wisdom/static/js/main.a029cbe2.js.map",
+    "787.28cb0dcd.chunk.js.map": "/Wisdom/static/js/787.28cb0dcd.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.37da622b.css",
+    "static/js/main.a029cbe2.js"
+  ]
+}
